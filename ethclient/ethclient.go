@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/hoaleee/go-ethereum"
+	"github.com/hoaleee/go-ethereum/common"
+	"github.com/hoaleee/go-ethereum/common/hexutil"
+	"github.com/hoaleee/go-ethereum/core/types"
+	"github.com/hoaleee/go-ethereum/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.
@@ -114,6 +114,9 @@ type rpcBlock struct {
 	UncleHashes  []common.Hash       `json:"uncles"`
 	Withdrawals  []*types.Withdrawal `json:"withdrawals,omitempty"`
 }
+type blockHash struct {
+	Hash common.Hash `json:"hash"`
+}
 
 func (ec *Client) getBlock(ctx context.Context, method string, args ...interface{}) (*types.Block, error) {
 	var raw json.RawMessage
@@ -121,12 +124,16 @@ func (ec *Client) getBlock(ctx context.Context, method string, args ...interface
 	if err != nil {
 		return nil, err
 	}
-
 	// Decode header and transactions.
 	var head *types.Header
 	if err := json.Unmarshal(raw, &head); err != nil {
 		return nil, err
 	}
+	var blockHash *blockHash
+	if err := json.Unmarshal(raw, &blockHash); err != nil {
+		return nil, err
+	}
+	head.BlockHash = blockHash.Hash
 	// When the block is not found, the API returns JSON null.
 	if head == nil {
 		return nil, ethereum.NotFound
@@ -186,9 +193,19 @@ func (ec *Client) getBlock(ctx context.Context, method string, args ...interface
 
 // HeaderByHash returns the block header with the given hash.
 func (ec *Client) HeaderByHash(ctx context.Context, hash common.Hash) (*types.Header, error) {
+
+	var raw json.RawMessage
+	err := ec.c.CallContext(ctx, &raw, "eth_getBlockByHash", hash, false)
 	var head *types.Header
-	err := ec.c.CallContext(ctx, &head, "eth_getBlockByHash", hash, false)
-	if err == nil && head == nil {
+	if err := json.Unmarshal(raw, &head); err != nil {
+		return nil, err
+	}
+	var blockHash *blockHash
+	if err := json.Unmarshal(raw, &blockHash); err != nil {
+		return nil, err
+	}
+	head.BlockHash = blockHash.Hash
+	if err == nil { //&& head == nil {
 		err = ethereum.NotFound
 	}
 	return head, err
@@ -197,8 +214,17 @@ func (ec *Client) HeaderByHash(ctx context.Context, hash common.Hash) (*types.He
 // HeaderByNumber returns a block header from the current canonical chain. If number is
 // nil, the latest known header is returned.
 func (ec *Client) HeaderByNumber(ctx context.Context, number *big.Int) (*types.Header, error) {
+	var raw json.RawMessage
+	err := ec.c.CallContext(ctx, &raw, "eth_getBlockByNumber", toBlockNumArg(number), false)
 	var head *types.Header
-	err := ec.c.CallContext(ctx, &head, "eth_getBlockByNumber", toBlockNumArg(number), false)
+	if err := json.Unmarshal(raw, &head); err != nil {
+		return nil, err
+	}
+	var blockHash *blockHash
+	if err := json.Unmarshal(raw, &blockHash); err != nil {
+		return nil, err
+	}
+	head.BlockHash = blockHash.Hash
 	if err == nil && head == nil {
 		err = ethereum.NotFound
 	}

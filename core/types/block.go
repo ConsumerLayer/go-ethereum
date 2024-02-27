@@ -26,9 +26,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/hoaleee/go-ethereum/common"
+	"github.com/hoaleee/go-ethereum/common/hexutil"
+	"github.com/hoaleee/go-ethereum/rlp"
 )
 
 // A BlockNonce is a 64-bit hash which proves (combined with the
@@ -63,6 +63,7 @@ func (n *BlockNonce) UnmarshalText(input []byte) error {
 
 // Header represents a block header in the Ethereum blockchain.
 type Header struct {
+	BlockHash   common.Hash    `json:"hash"             gencodec:"required"`
 	ParentHash  common.Hash    `json:"parentHash"       gencodec:"required"`
 	UncleHash   common.Hash    `json:"sha3Uncles"       gencodec:"required"`
 	Coinbase    common.Address `json:"miner"`
@@ -109,7 +110,7 @@ type headerMarshaling struct {
 // Hash returns the block hash of the header, which is simply the keccak256 hash of its
 // RLP encoding.
 func (h *Header) Hash() common.Hash {
-	return rlpHash(h)
+	return h.BlockHash
 }
 
 var headerSize = common.StorageSize(reflect.TypeOf(Header{}).Size())

@@ -25,17 +25,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/hoaleee/go-ethereum"
+	"github.com/hoaleee/go-ethereum/common"
+	"github.com/hoaleee/go-ethereum/consensus/ethash"
+	"github.com/hoaleee/go-ethereum/core"
+	"github.com/hoaleee/go-ethereum/core/types"
+	"github.com/hoaleee/go-ethereum/crypto"
+	"github.com/hoaleee/go-ethereum/eth"
+	"github.com/hoaleee/go-ethereum/eth/ethconfig"
+	"github.com/hoaleee/go-ethereum/node"
+	"github.com/hoaleee/go-ethereum/params"
+	"github.com/hoaleee/go-ethereum/rpc"
 )
 
 // Verify that Client implements the ethereum interfaces.

@@ -17,10 +17,10 @@
 package vm
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/hoaleee/go-ethereum/common"
+	"github.com/hoaleee/go-ethereum/core/types"
+	"github.com/hoaleee/go-ethereum/crypto"
+	"github.com/hoaleee/go-ethereum/params"
 	"github.com/holiman/uint256"
 )
 

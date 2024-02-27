@@ -23,12 +23,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/hoaleee/go-ethereum/consensus"
+	"github.com/hoaleee/go-ethereum/consensus/ethash"
+	"github.com/hoaleee/go-ethereum/core/rawdb"
+	"github.com/hoaleee/go-ethereum/core/types"
+	"github.com/hoaleee/go-ethereum/params"
+	"github.com/hoaleee/go-ethereum/trie"
 )
 
 func verifyUnbrokenCanonchain(hc *HeaderChain) error {

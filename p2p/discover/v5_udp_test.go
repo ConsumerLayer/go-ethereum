@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/internal/testlog"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/discover/v5wire"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/hoaleee/go-ethereum/internal/testlog"
+	"github.com/hoaleee/go-ethereum/log"
+	"github.com/hoaleee/go-ethereum/p2p/discover/v5wire"
+	"github.com/hoaleee/go-ethereum/p2p/enode"
+	"github.com/hoaleee/go-ethereum/p2p/enr"
+	"github.com/hoaleee/go-ethereum/rlp"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slices"
 )
