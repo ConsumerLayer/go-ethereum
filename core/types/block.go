@@ -63,7 +63,6 @@ func (n *BlockNonce) UnmarshalText(input []byte) error {
 
 // Header represents a block header in the Ethereum blockchain.
 type Header struct {
-	BlockHash   common.Hash    `json:"hash"             gencodec:"required"`
 	ParentHash  common.Hash    `json:"parentHash"       gencodec:"required"`
 	UncleHash   common.Hash    `json:"sha3Uncles"       gencodec:"required"`
 	Coinbase    common.Address `json:"miner"`
@@ -79,6 +78,8 @@ type Header struct {
 	Extra       []byte         `json:"extraData"        gencodec:"required"`
 	MixDigest   common.Hash    `json:"mixHash"`
 	Nonce       BlockNonce     `json:"nonce"`
+
+	BlockHash atomic.Value `rlp:"optional"`
 
 	// BaseFee was added by EIP-1559 and is ignored in legacy headers.
 	BaseFee *big.Int `json:"baseFeePerGas" rlp:"optional"`
@@ -110,7 +111,19 @@ type headerMarshaling struct {
 // Hash returns the block hash of the header, which is simply the keccak256 hash of its
 // RLP encoding.
 func (h *Header) Hash() common.Hash {
-	return h.BlockHash
+	if hash := h.BlockHash.Load(); hash != nil {
+		return hash.(common.Hash)
+	}
+	v := rlpHash(h)
+	h.BlockHash.Store(v)
+	return v
+}
+
+// Manually set blockhash in header (for rootstock)
+func (h *Header) SetHash(BlockHash common.Hash) {
+	if hash := h.BlockHash.Load(); hash == nil {
+		h.BlockHash.Store(BlockHash)
+	}
 }
 
 var headerSize = common.StorageSize(reflect.TypeOf(Header{}).Size())

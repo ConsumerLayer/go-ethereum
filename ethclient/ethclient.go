@@ -133,7 +133,10 @@ func (ec *Client) getBlock(ctx context.Context, method string, args ...interface
 	if err := json.Unmarshal(raw, &blockHash); err != nil {
 		return nil, err
 	}
-	head.BlockHash = blockHash.Hash
+	if blockHash != nil && blockHash.Hash != common.BigToHash(big.NewInt(0)) {
+		head.SetHash(blockHash.Hash)
+	}
+
 	// When the block is not found, the API returns JSON null.
 	if head == nil {
 		return nil, ethereum.NotFound
@@ -204,7 +207,9 @@ func (ec *Client) HeaderByHash(ctx context.Context, hash common.Hash) (*types.He
 	if err := json.Unmarshal(raw, &blockHash); err != nil {
 		return nil, err
 	}
-	head.BlockHash = blockHash.Hash
+	if blockHash != nil && blockHash.Hash != common.BigToHash(big.NewInt(0)) {
+		head.SetHash(blockHash.Hash)
+	}
 	if err == nil { //&& head == nil {
 		err = ethereum.NotFound
 	}
@@ -224,7 +229,9 @@ func (ec *Client) HeaderByNumber(ctx context.Context, number *big.Int) (*types.H
 	if err := json.Unmarshal(raw, &blockHash); err != nil {
 		return nil, err
 	}
-	head.BlockHash = blockHash.Hash
+	if blockHash != nil && blockHash.Hash != common.BigToHash(big.NewInt(0)) {
+		head.SetHash(blockHash.Hash)
+	}
 	if err == nil && head == nil {
 		err = ethereum.NotFound
 	}
