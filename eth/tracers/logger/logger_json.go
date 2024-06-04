@@ -21,9 +21,9 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/math"
-	"github.com/hoaleee/go-ethereum/core/vm"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/math"
+	"github.com/ConsumerLayer/go-ethereum/core/vm"
 )
 
 type JSONLogger struct {

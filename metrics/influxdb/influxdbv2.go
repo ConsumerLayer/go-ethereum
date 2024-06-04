@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/metrics"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/metrics"
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api"
 )

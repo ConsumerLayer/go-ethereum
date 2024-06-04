@@ -26,9 +26,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
-	"github.com/hoaleee/go-ethereum/rlp"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/rlp"
 )
 
 // A BlockNonce is a 64-bit hash which proves (combined with the

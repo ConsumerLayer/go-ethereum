@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/eth/protocols/eth"
-	"github.com/hoaleee/go-ethereum/p2p"
-	"github.com/hoaleee/go-ethereum/p2p/rlpx"
-	"github.com/hoaleee/go-ethereum/rlp"
+	"github.com/ConsumerLayer/go-ethereum/eth/protocols/eth"
+	"github.com/ConsumerLayer/go-ethereum/p2p"
+	"github.com/ConsumerLayer/go-ethereum/p2p/rlpx"
+	"github.com/ConsumerLayer/go-ethereum/rlp"
 )
 
 type Message interface {

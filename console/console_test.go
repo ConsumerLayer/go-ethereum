@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/console/prompt"
-	"github.com/hoaleee/go-ethereum/core"
-	"github.com/hoaleee/go-ethereum/eth"
-	"github.com/hoaleee/go-ethereum/eth/ethconfig"
-	"github.com/hoaleee/go-ethereum/internal/jsre"
-	"github.com/hoaleee/go-ethereum/miner"
-	"github.com/hoaleee/go-ethereum/node"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/console/prompt"
+	"github.com/ConsumerLayer/go-ethereum/core"
+	"github.com/ConsumerLayer/go-ethereum/eth"
+	"github.com/ConsumerLayer/go-ethereum/eth/ethconfig"
+	"github.com/ConsumerLayer/go-ethereum/internal/jsre"
+	"github.com/ConsumerLayer/go-ethereum/miner"
+	"github.com/ConsumerLayer/go-ethereum/node"
 )
 
 const (

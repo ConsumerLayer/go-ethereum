@@ -26,7 +26,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/hoaleee/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common"
 )
 
 // Type enumerator

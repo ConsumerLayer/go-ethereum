@@ -21,8 +21,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/crypto"
-	"github.com/hoaleee/go-ethereum/p2p/enr"
+	"github.com/ConsumerLayer/go-ethereum/crypto"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enr"
 	"github.com/stretchr/testify/assert"
 )
 

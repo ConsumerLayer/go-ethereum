@@ -24,11 +24,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common/mclock"
-	"github.com/hoaleee/go-ethereum/crypto"
-	"github.com/hoaleee/go-ethereum/p2p/discover/v5wire"
-	"github.com/hoaleee/go-ethereum/p2p/enode"
-	"github.com/hoaleee/go-ethereum/p2p/enr"
+	"github.com/ConsumerLayer/go-ethereum/common/mclock"
+	"github.com/ConsumerLayer/go-ethereum/crypto"
+	"github.com/ConsumerLayer/go-ethereum/p2p/discover/v5wire"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enode"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enr"
 )
 
 // readError represents an error during packet reading.

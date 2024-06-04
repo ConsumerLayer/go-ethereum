@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/hoaleee/go-ethereum/event"
+	"github.com/ConsumerLayer/go-ethereum/event"
 )
 
 func ExampleFeed_acknowledgedEvents() {

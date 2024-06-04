@@ -16,7 +16,7 @@
 
 package params
 
-import "github.com/hoaleee/go-ethereum/common"
+import "github.com/ConsumerLayer/go-ethereum/common"
 
 // MainnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the main Ethereum network.

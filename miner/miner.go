@@ -23,17 +23,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
-	"github.com/hoaleee/go-ethereum/consensus"
-	"github.com/hoaleee/go-ethereum/core"
-	"github.com/hoaleee/go-ethereum/core/state"
-	"github.com/hoaleee/go-ethereum/core/txpool"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/eth/downloader"
-	"github.com/hoaleee/go-ethereum/event"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/consensus"
+	"github.com/ConsumerLayer/go-ethereum/core"
+	"github.com/ConsumerLayer/go-ethereum/core/state"
+	"github.com/ConsumerLayer/go-ethereum/core/txpool"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/eth/downloader"
+	"github.com/ConsumerLayer/go-ethereum/event"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/params"
 )
 
 // Backend wraps all methods required for mining. Only full node is capable

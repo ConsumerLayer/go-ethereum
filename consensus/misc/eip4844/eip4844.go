@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/params"
 )
 
 var (

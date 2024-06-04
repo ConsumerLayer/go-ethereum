@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/metrics"
+	"github.com/ConsumerLayer/go-ethereum/metrics"
 )
 
 var (

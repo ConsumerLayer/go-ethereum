@@ -23,8 +23,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/log"
 	"github.com/mattn/go-colorable"
 )
 

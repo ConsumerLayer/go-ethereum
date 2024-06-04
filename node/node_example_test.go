@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hoaleee/go-ethereum/node"
+	"github.com/ConsumerLayer/go-ethereum/node"
 )
 
 // SampleLifecycle is a trivial network service that can be attached to a node for

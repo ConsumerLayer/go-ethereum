@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/params"
 )
 
 const (

@@ -19,9 +19,9 @@ package core
 import (
 	"sync/atomic"
 
-	"github.com/hoaleee/go-ethereum/core/state"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/core/vm"
+	"github.com/ConsumerLayer/go-ethereum/core/state"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

@@ -25,8 +25,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hoaleee/go-ethereum/common/math"
-	"github.com/hoaleee/go-ethereum/crypto/secp256k1"
+	"github.com/ConsumerLayer/go-ethereum/common/math"
+	"github.com/ConsumerLayer/go-ethereum/crypto/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

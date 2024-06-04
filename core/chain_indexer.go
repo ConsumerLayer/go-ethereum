@@ -25,12 +25,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/rawdb"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/ethdb"
-	"github.com/hoaleee/go-ethereum/event"
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/rawdb"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/ethdb"
+	"github.com/ConsumerLayer/go-ethereum/event"
+	"github.com/ConsumerLayer/go-ethereum/log"
 )
 
 // ChainIndexerBackend defines the methods needed to process chain segments in

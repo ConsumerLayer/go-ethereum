@@ -24,13 +24,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/consensus/ethash"
-	"github.com/hoaleee/go-ethereum/core"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/params"
-	"github.com/hoaleee/go-ethereum/trie"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/consensus/ethash"
+	"github.com/ConsumerLayer/go-ethereum/core"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/trie"
 )
 
 // makeChain creates a chain of n blocks starting at and including parent.

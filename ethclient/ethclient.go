@@ -22,13 +22,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/ConsumerLayer/go-ethereum"
 	"math/big"
 
-	"github.com/hoaleee/go-ethereum"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/rpc"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

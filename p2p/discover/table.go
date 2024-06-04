@@ -32,11 +32,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/metrics"
-	"github.com/hoaleee/go-ethereum/p2p/enode"
-	"github.com/hoaleee/go-ethereum/p2p/netutil"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/metrics"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enode"
+	"github.com/ConsumerLayer/go-ethereum/p2p/netutil"
 )
 
 const (

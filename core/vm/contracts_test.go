@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

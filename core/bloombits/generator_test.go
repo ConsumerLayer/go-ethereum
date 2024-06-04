@@ -22,7 +22,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
 )
 
 // Tests that batched bloom bits are correctly rotated from the input bloom

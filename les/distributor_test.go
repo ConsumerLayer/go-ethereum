@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common/mclock"
+	"github.com/ConsumerLayer/go-ethereum/common/mclock"
 )
 
 type testDistReq struct {

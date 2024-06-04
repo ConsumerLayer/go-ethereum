@@ -17,10 +17,10 @@
 package trie
 
 import (
-	"github.com/hoaleee/go-ethereum/core/rawdb"
-	"github.com/hoaleee/go-ethereum/ethdb"
-	"github.com/hoaleee/go-ethereum/trie/triedb/hashdb"
-	"github.com/hoaleee/go-ethereum/trie/triedb/pathdb"
+	"github.com/ConsumerLayer/go-ethereum/core/rawdb"
+	"github.com/ConsumerLayer/go-ethereum/ethdb"
+	"github.com/ConsumerLayer/go-ethereum/trie/triedb/hashdb"
+	"github.com/ConsumerLayer/go-ethereum/trie/triedb/pathdb"
 )
 
 // newTestDatabase initializes the trie database with specified scheme.

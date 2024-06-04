@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/node"
-	"github.com/hoaleee/go-ethereum/p2p/enode"
-	"github.com/hoaleee/go-ethereum/p2p/simulations/adapters"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/node"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enode"
+	"github.com/ConsumerLayer/go-ethereum/p2p/simulations/adapters"
 )
 
 // Tests that a created snapshot with a minimal service only contains the expected connections

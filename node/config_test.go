@@ -23,8 +23,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/crypto"
-	"github.com/hoaleee/go-ethereum/p2p"
+	"github.com/ConsumerLayer/go-ethereum/crypto"
+	"github.com/ConsumerLayer/go-ethereum/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

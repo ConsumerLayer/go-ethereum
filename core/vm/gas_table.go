@@ -19,9 +19,9 @@ package vm
 import (
 	"errors"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/math"
-	"github.com/hoaleee/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/math"
+	"github.com/ConsumerLayer/go-ethereum/params"
 )
 
 // memoryGasCost calculates the quadratic gas for memory expansion. It does so

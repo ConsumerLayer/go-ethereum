@@ -16,7 +16,7 @@
 
 package blobpool
 
-import "github.com/hoaleee/go-ethereum/metrics"
+import "github.com/ConsumerLayer/go-ethereum/metrics"
 
 var (
 	// datacapGauge tracks the user's configured capacity for the blob pool. It

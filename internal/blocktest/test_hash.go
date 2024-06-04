@@ -25,7 +25,7 @@ package blocktest
 import (
 	"hash"
 
-	"github.com/hoaleee/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common"
 	"golang.org/x/crypto/sha3"
 )
 

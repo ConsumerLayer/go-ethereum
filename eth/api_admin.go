@@ -24,9 +24,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hoaleee/go-ethereum/core"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/rlp"
+	"github.com/ConsumerLayer/go-ethereum/core"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/rlp"
 )
 
 // AdminAPI is the collection of Ethereum full node related APIs for node

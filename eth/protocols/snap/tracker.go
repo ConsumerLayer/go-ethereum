@@ -19,7 +19,7 @@ package snap
 import (
 	"time"
 
-	"github.com/hoaleee/go-ethereum/p2p/tracker"
+	"github.com/ConsumerLayer/go-ethereum/p2p/tracker"
 )
 
 // requestTracker is a singleton tracker for request times.

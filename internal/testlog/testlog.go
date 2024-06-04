@@ -21,7 +21,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/log"
 )
 
 // Handler returns a log handler which logs to the unit test log of t.

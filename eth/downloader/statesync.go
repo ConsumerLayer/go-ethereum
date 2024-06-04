@@ -19,8 +19,8 @@ package downloader
 import (
 	"sync"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/log"
 )
 
 // syncState starts downloading state with the given root hash.

@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/p2p/enode"
-	"github.com/hoaleee/go-ethereum/p2p/simulations/adapters"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enode"
+	"github.com/ConsumerLayer/go-ethereum/p2p/simulations/adapters"
 )
 
 // a map of mocker names to its function

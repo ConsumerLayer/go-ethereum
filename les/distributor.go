@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common/mclock"
-	"github.com/hoaleee/go-ethereum/les/utils"
+	"github.com/ConsumerLayer/go-ethereum/common/mclock"
+	"github.com/ConsumerLayer/go-ethereum/les/utils"
 )
 
 // requestDistributor implements a mechanism that distributes requests to

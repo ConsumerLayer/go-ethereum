@@ -20,8 +20,8 @@
 package node
 
 import (
-	"github.com/hoaleee/go-ethereum/p2p"
-	"github.com/hoaleee/go-ethereum/rpc"
+	"github.com/ConsumerLayer/go-ethereum/p2p"
+	"github.com/ConsumerLayer/go-ethereum/rpc"
 )
 
 // NoopLifecycle is a trivial implementation of the Service interface.

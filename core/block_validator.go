@@ -20,11 +20,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hoaleee/go-ethereum/consensus"
-	"github.com/hoaleee/go-ethereum/core/state"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/params"
-	"github.com/hoaleee/go-ethereum/trie"
+	"github.com/ConsumerLayer/go-ethereum/consensus"
+	"github.com/ConsumerLayer/go-ethereum/core/state"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/trie"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

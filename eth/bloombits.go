@@ -19,8 +19,8 @@ package eth
 import (
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common/bitutil"
-	"github.com/hoaleee/go-ethereum/core/rawdb"
+	"github.com/ConsumerLayer/go-ethereum/common/bitutil"
+	"github.com/ConsumerLayer/go-ethereum/core/rawdb"
 )
 
 const (

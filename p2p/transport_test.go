@@ -22,9 +22,9 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/ConsumerLayer/go-ethereum/crypto"
+	"github.com/ConsumerLayer/go-ethereum/p2p/simulations/pipes"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/hoaleee/go-ethereum/crypto"
-	"github.com/hoaleee/go-ethereum/p2p/simulations/pipes"
 )
 
 func TestProtocolHandshake(t *testing.T) {

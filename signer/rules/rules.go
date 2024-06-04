@@ -23,12 +23,12 @@ import (
 	"os"
 	"strings"
 
+	"github.com/ConsumerLayer/go-ethereum/internal/ethapi"
+	"github.com/ConsumerLayer/go-ethereum/internal/jsre/deps"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/signer/core"
+	"github.com/ConsumerLayer/go-ethereum/signer/storage"
 	"github.com/dop251/goja"
-	"github.com/hoaleee/go-ethereum/internal/ethapi"
-	"github.com/hoaleee/go-ethereum/internal/jsre/deps"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/signer/core"
-	"github.com/hoaleee/go-ethereum/signer/storage"
 )
 
 // consoleOutput is an override for the console.log and console.error methods to

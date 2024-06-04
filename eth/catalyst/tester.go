@@ -20,11 +20,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/eth"
-	"github.com/hoaleee/go-ethereum/eth/downloader"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/node"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/eth"
+	"github.com/ConsumerLayer/go-ethereum/eth/downloader"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/node"
 )
 
 // FullSyncTester is an auxiliary service that allows Geth to perform full sync

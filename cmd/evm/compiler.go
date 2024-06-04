@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/hoaleee/go-ethereum/cmd/evm/internal/compiler"
+	"github.com/ConsumerLayer/go-ethereum/cmd/evm/internal/compiler"
 
 	"github.com/urfave/cli/v2"
 )

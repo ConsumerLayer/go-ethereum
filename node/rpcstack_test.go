@@ -28,11 +28,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ConsumerLayer/go-ethereum/internal/testlog"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/rpc"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/gorilla/websocket"
-	"github.com/hoaleee/go-ethereum/internal/testlog"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/rpc"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -24,7 +24,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/log"
 	"golang.org/x/exp/slices"
 )
 

@@ -1,4 +1,4 @@
-module github.com/hoaleee/go-ethereum
+module github.com/ConsumerLayer/go-ethereum
 
 go 1.19
 

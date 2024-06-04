@@ -25,11 +25,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/rawdb"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/rlp"
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/rawdb"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/rlp"
 )
 
 // randomHash generates a random blob of data and returns it as a hash.
@@ -185,7 +185,7 @@ func TestDiskLayerExternalInvalidationPartialFlatten(t *testing.T) {
 // layer to check the usual mode of operation where the accumulator is retained.
 func TestDiffLayerExternalInvalidationPartialFlatten(t *testing.T) {
 	// Un-commenting this triggers the bloom set to be deterministic. The values below
-	// were used to trigger the flaw described in https://github.com/hoaleee/go-ethereum/issues/27254.
+	// were used to trigger the flaw described in https://github.com/ConsumerLayer/go-ethereum/issues/27254.
 	// bloomDestructHasherOffset, bloomAccountHasherOffset, bloomStorageHasherOffset = 14, 24, 5
 
 	// Create an empty base layer and a snapshot tree out of it

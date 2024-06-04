@@ -22,7 +22,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/hoaleee/go-ethereum/rlp/internal/rlpstruct"
+	"github.com/ConsumerLayer/go-ethereum/rlp/internal/rlpstruct"
 )
 
 // typeinfo is an entry in the type cache.

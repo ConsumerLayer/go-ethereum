@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/ConsumerLayer/go-ethereum/accounts/abi"
 	fuzz "github.com/google/gofuzz"
-	"github.com/hoaleee/go-ethereum/accounts/abi"
 )
 
 var (

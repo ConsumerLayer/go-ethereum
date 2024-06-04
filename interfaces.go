@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

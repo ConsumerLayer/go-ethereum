@@ -20,11 +20,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/eth/downloader"
-	"github.com/hoaleee/go-ethereum/eth/protocols/eth"
-	"github.com/hoaleee/go-ethereum/eth/protocols/snap"
-	"github.com/hoaleee/go-ethereum/p2p"
-	"github.com/hoaleee/go-ethereum/p2p/enode"
+	"github.com/ConsumerLayer/go-ethereum/eth/downloader"
+	"github.com/ConsumerLayer/go-ethereum/eth/protocols/eth"
+	"github.com/ConsumerLayer/go-ethereum/eth/protocols/snap"
+	"github.com/ConsumerLayer/go-ethereum/p2p"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enode"
 )
 
 // Tests that snap sync is disabled after a successful sync cycle.

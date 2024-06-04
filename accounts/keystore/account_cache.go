@@ -27,10 +27,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ConsumerLayer/go-ethereum/accounts"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/log"
 	mapset "github.com/deckarep/golang-set/v2"
-	"github.com/hoaleee/go-ethereum/accounts"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/log"
 	"golang.org/x/exp/slices"
 )
 

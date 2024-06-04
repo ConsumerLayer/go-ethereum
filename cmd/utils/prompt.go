@@ -20,7 +20,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/hoaleee/go-ethereum/console/prompt"
+	"github.com/ConsumerLayer/go-ethereum/console/prompt"
 )
 
 // GetPassPhrase displays the given text(prompt) to the user and requests some textual

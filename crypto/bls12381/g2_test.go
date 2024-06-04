@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common"
 )
 
 func (g *G2) one() *PointG2 {

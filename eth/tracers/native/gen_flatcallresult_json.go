@@ -5,8 +5,8 @@ package native
 import (
 	"encoding/json"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
 )
 
 var _ = (*flatCallResultMarshaling)(nil)

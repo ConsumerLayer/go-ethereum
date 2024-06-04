@@ -24,18 +24,18 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/rawdb"
-	"github.com/hoaleee/go-ethereum/core/state/snapshot"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/crypto"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/metrics"
-	"github.com/hoaleee/go-ethereum/params"
-	"github.com/hoaleee/go-ethereum/rlp"
-	"github.com/hoaleee/go-ethereum/trie"
-	"github.com/hoaleee/go-ethereum/trie/trienode"
-	"github.com/hoaleee/go-ethereum/trie/triestate"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/rawdb"
+	"github.com/ConsumerLayer/go-ethereum/core/state/snapshot"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/crypto"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/metrics"
+	"github.com/ConsumerLayer/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/rlp"
+	"github.com/ConsumerLayer/go-ethereum/trie"
+	"github.com/ConsumerLayer/go-ethereum/trie/trienode"
+	"github.com/ConsumerLayer/go-ethereum/trie/triestate"
 )
 
 type revision struct {
@@ -791,7 +791,7 @@ func (s *StateDB) Copy() *StateDB {
 	}
 	// Copy the dirty states, logs, and preimages
 	for addr := range s.journal.dirties {
-		// As documented [here](https://github.com/hoaleee/go-ethereum/pull/16485#issuecomment-380438527),
+		// As documented [here](https://github.com/ConsumerLayer/go-ethereum/pull/16485#issuecomment-380438527),
 		// and in the Finalise-method, there is a case where an object is in the journal but not
 		// in the stateObjects: OOG after touch on ripeMD prior to Byzantium. Thus, we need to check for
 		// nil

@@ -17,8 +17,8 @@
 package eth
 
 import (
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
 )
 
 // EthereumAPI provides an API to access Ethereum full node-related information.

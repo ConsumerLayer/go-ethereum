@@ -22,7 +22,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/hoaleee/go-ethereum/rlp"
+	"github.com/ConsumerLayer/go-ethereum/rlp"
 )
 
 // Entry is implemented by known node record entry types.

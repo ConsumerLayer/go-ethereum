@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/accounts/keystore"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/accounts/keystore"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
 )
 
 // Tests that the account management snippets work correctly.

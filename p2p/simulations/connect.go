@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/hoaleee/go-ethereum/p2p/enode"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enode"
 )
 
 var (

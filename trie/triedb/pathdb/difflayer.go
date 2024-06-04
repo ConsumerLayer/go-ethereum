@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/trie/trienode"
-	"github.com/hoaleee/go-ethereum/trie/triestate"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/trie/trienode"
+	"github.com/ConsumerLayer/go-ethereum/trie/triestate"
 )
 
 // diffLayer represents a collection of modifications made to the in-memory tries

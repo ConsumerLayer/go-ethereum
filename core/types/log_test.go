@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
 )
 
 var unmarshalLogTests = map[string]struct {

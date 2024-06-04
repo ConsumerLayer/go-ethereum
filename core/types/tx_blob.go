@@ -19,8 +19,8 @@ package types
 import (
 	"math/big"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/params"
 	"github.com/holiman/uint256"
 )
 

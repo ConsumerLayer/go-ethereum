@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/p2p/dnsdisc"
 	"github.com/cloudflare/cloudflare-go"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/p2p/dnsdisc"
 	"github.com/urfave/cli/v2"
 )
 

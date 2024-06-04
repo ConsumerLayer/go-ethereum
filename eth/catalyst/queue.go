@@ -19,10 +19,10 @@ package catalyst
 import (
 	"sync"
 
-	"github.com/hoaleee/go-ethereum/beacon/engine"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/miner"
+	"github.com/ConsumerLayer/go-ethereum/beacon/engine"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/miner"
 )
 
 // maxTrackedPayloads is the maximum number of prepared payloads the execution

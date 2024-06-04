@@ -22,10 +22,10 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/forkid"
-	"github.com/hoaleee/go-ethereum/metrics"
-	"github.com/hoaleee/go-ethereum/p2p"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/forkid"
+	"github.com/ConsumerLayer/go-ethereum/metrics"
+	"github.com/ConsumerLayer/go-ethereum/p2p"
 )
 
 const (

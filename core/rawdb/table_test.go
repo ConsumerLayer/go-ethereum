@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/ethdb"
+	"github.com/ConsumerLayer/go-ethereum/ethdb"
 )
 
 func TestTableDatabase(t *testing.T)            { testTableDatabase(t, "prefix") }

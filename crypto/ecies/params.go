@@ -43,7 +43,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/hoaleee/go-ethereum/crypto"
+	ethcrypto "github.com/ConsumerLayer/go-ethereum/crypto"
 )
 
 var (

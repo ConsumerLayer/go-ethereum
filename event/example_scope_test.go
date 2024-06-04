@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hoaleee/go-ethereum/event"
+	"github.com/ConsumerLayer/go-ethereum/event"
 )
 
 // This example demonstrates how SubscriptionScope can be used to control the lifetime of

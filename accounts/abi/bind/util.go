@@ -21,10 +21,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/hoaleee/go-ethereum"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/log"
 )
 
 // WaitMined waits for tx to be mined on the blockchain.

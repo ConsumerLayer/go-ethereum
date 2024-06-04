@@ -23,14 +23,14 @@ import (
 	"fmt"
 	"mime"
 
-	"github.com/hoaleee/go-ethereum/accounts"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
-	"github.com/hoaleee/go-ethereum/consensus/clique"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/crypto"
-	"github.com/hoaleee/go-ethereum/rlp"
-	"github.com/hoaleee/go-ethereum/signer/core/apitypes"
+	"github.com/ConsumerLayer/go-ethereum/accounts"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/consensus/clique"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/crypto"
+	"github.com/ConsumerLayer/go-ethereum/rlp"
+	"github.com/ConsumerLayer/go-ethereum/signer/core/apitypes"
 )
 
 // sign receives a request and produces a signature
@@ -302,7 +302,7 @@ func (api *SignerAPI) EcRecover(ctx context.Context, data hexutil.Bytes, sig hex
 	// Note, the signature must conform to the secp256k1 curve R, S and V values, where
 	// the V value must be 27 or 28 for legacy reasons.
 	//
-	// https://github.com/hoaleee/go-ethereum/wiki/Management-APIs#personal_ecRecover
+	// https://github.com/ConsumerLayer/go-ethereum/wiki/Management-APIs#personal_ecRecover
 	if len(sig) != 65 {
 		return common.Address{}, errors.New("signature must be 65 bytes long")
 	}

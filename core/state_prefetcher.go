@@ -19,11 +19,11 @@ package core
 import (
 	"sync/atomic"
 
-	"github.com/hoaleee/go-ethereum/consensus"
-	"github.com/hoaleee/go-ethereum/core/state"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/core/vm"
-	"github.com/hoaleee/go-ethereum/params"
+	"github.com/ConsumerLayer/go-ethereum/consensus"
+	"github.com/ConsumerLayer/go-ethereum/core/state"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/core/vm"
+	"github.com/ConsumerLayer/go-ethereum/params"
 )
 
 // statePrefetcher is a basic Prefetcher, which blindly executes a block on top

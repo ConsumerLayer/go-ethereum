@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/hoaleee/go-ethereum/accounts/abi"
+import "github.com/ConsumerLayer/go-ethereum/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -91,12 +91,12 @@ import (
 	"strings"
 	"errors"
 
-	ethereum "github.com/hoaleee/go-ethereum"
-	"github.com/hoaleee/go-ethereum/accounts/abi"
-	"github.com/hoaleee/go-ethereum/accounts/abi/bind"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/event"
+	ethereum "github.com/ConsumerLayer/go-ethereum"
+	"github.com/ConsumerLayer/go-ethereum/accounts/abi"
+	"github.com/ConsumerLayer/go-ethereum/accounts/abi/bind"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

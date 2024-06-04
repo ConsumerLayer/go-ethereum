@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common/hexutil"
-	"github.com/hoaleee/go-ethereum/rpc"
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/rpc"
 )
 
 // In this example, our client wishes to track the latest 'block number'

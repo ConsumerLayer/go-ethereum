@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"github.com/hoaleee/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common"
 )
 
 // journalEntry is a modification entry in the state change journal that can be

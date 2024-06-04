@@ -20,10 +20,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common/mclock"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/p2p/enr"
-	"github.com/hoaleee/go-ethereum/p2p/nat"
+	"github.com/ConsumerLayer/go-ethereum/common/mclock"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enr"
+	"github.com/ConsumerLayer/go-ethereum/p2p/nat"
 )
 
 const (

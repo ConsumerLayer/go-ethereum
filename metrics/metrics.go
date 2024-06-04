@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/log"
 )
 
 // Enabled is checked by the constructor functions for all of the

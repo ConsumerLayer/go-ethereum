@@ -24,9 +24,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/crypto"
-	"github.com/hoaleee/go-ethereum/internal/utesting"
-	"github.com/hoaleee/go-ethereum/p2p/discover/v4wire"
+	"github.com/ConsumerLayer/go-ethereum/crypto"
+	"github.com/ConsumerLayer/go-ethereum/internal/utesting"
+	"github.com/ConsumerLayer/go-ethereum/p2p/discover/v4wire"
 )
 
 const (

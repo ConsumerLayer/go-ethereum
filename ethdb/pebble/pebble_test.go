@@ -21,10 +21,10 @@ package pebble
 import (
 	"testing"
 
+	"github.com/ConsumerLayer/go-ethereum/ethdb"
+	"github.com/ConsumerLayer/go-ethereum/ethdb/dbtest"
 	"github.com/cockroachdb/pebble"
 	"github.com/cockroachdb/pebble/vfs"
-	"github.com/hoaleee/go-ethereum/ethdb"
-	"github.com/hoaleee/go-ethereum/ethdb/dbtest"
 )
 
 func TestPebbleDB(t *testing.T) {

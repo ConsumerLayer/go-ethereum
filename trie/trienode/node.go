@@ -21,7 +21,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hoaleee/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common"
 )
 
 // Node is a wrapper which contains the encoded blob of the trie node and its

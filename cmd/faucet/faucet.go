@@ -39,25 +39,25 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ConsumerLayer/go-ethereum/accounts"
+	"github.com/ConsumerLayer/go-ethereum/accounts/keystore"
+	"github.com/ConsumerLayer/go-ethereum/cmd/utils"
+	"github.com/ConsumerLayer/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/core"
+	"github.com/ConsumerLayer/go-ethereum/core/types"
+	"github.com/ConsumerLayer/go-ethereum/eth/downloader"
+	"github.com/ConsumerLayer/go-ethereum/eth/ethconfig"
+	"github.com/ConsumerLayer/go-ethereum/ethclient"
+	"github.com/ConsumerLayer/go-ethereum/ethstats"
+	"github.com/ConsumerLayer/go-ethereum/internal/version"
+	"github.com/ConsumerLayer/go-ethereum/les"
+	"github.com/ConsumerLayer/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/node"
+	"github.com/ConsumerLayer/go-ethereum/p2p"
+	"github.com/ConsumerLayer/go-ethereum/p2p/enode"
+	"github.com/ConsumerLayer/go-ethereum/p2p/nat"
+	"github.com/ConsumerLayer/go-ethereum/params"
 	"github.com/gorilla/websocket"
-	"github.com/hoaleee/go-ethereum/accounts"
-	"github.com/hoaleee/go-ethereum/accounts/keystore"
-	"github.com/hoaleee/go-ethereum/cmd/utils"
-	"github.com/hoaleee/go-ethereum/common"
-	"github.com/hoaleee/go-ethereum/core"
-	"github.com/hoaleee/go-ethereum/core/types"
-	"github.com/hoaleee/go-ethereum/eth/downloader"
-	"github.com/hoaleee/go-ethereum/eth/ethconfig"
-	"github.com/hoaleee/go-ethereum/ethclient"
-	"github.com/hoaleee/go-ethereum/ethstats"
-	"github.com/hoaleee/go-ethereum/internal/version"
-	"github.com/hoaleee/go-ethereum/les"
-	"github.com/hoaleee/go-ethereum/log"
-	"github.com/hoaleee/go-ethereum/node"
-	"github.com/hoaleee/go-ethereum/p2p"
-	"github.com/hoaleee/go-ethereum/p2p/enode"
-	"github.com/hoaleee/go-ethereum/p2p/nat"
-	"github.com/hoaleee/go-ethereum/params"
 )
 
 var (
@@ -458,7 +458,7 @@ func (f *faucet) apiHandler(w http.ResponseWriter, r *http.Request) {
 			id = username
 		default:
 			//lint:ignore ST1005 This error is to be displayed in the browser
-			err = errors.New("Something funky happened, please open an issue at https://github.com/hoaleee/go-ethereum/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/ConsumerLayer/go-ethereum/issues")
 		}
 		if err != nil {
 			if err = sendError(wsconn, err); err != nil {

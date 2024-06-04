@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hoaleee/go-ethereum/common/mclock"
-	"github.com/hoaleee/go-ethereum/internal/testlog"
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/common/mclock"
+	"github.com/ConsumerLayer/go-ethereum/internal/testlog"
+	"github.com/ConsumerLayer/go-ethereum/log"
 )
 
 func TestServerPortMapping(t *testing.T) {

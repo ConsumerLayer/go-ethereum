@@ -27,9 +27,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ConsumerLayer/go-ethereum/log"
 	mapset "github.com/deckarep/golang-set/v2"
 	"github.com/gorilla/websocket"
-	"github.com/hoaleee/go-ethereum/log"
 )
 
 const (

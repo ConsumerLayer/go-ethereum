@@ -22,7 +22,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hoaleee/go-ethereum/common"
+	"github.com/ConsumerLayer/go-ethereum/common"
 )
 
 // TestExport does a basic test of "geth export", exporting the test-genesis.

@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ConsumerLayer/go-ethereum/common/hexutil"
+	"github.com/ConsumerLayer/go-ethereum/rpc"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/hoaleee/go-ethereum/common/hexutil"
-	"github.com/hoaleee/go-ethereum/rpc"
 )
 
 type helloRPC string

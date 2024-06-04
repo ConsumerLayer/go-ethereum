@@ -27,8 +27,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/hoaleee/go-ethereum/graphql/internal/graphiql"
-	"github.com/hoaleee/go-ethereum/log"
+	"github.com/ConsumerLayer/go-ethereum/graphql/internal/graphiql"
+	"github.com/ConsumerLayer/go-ethereum/log"
 )
 
 // GraphiQL is an in-browser IDE for exploring GraphiQL APIs.
